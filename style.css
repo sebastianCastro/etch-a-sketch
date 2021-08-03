@@ -1,0 +1,20 @@
+body {
+    font-family: "Georama", sans-serif;
+    font-weight: 400;
+}
+
+#clean-button {
+    background-color: #f8f9fa;
+    border: 1px solid #767777;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
