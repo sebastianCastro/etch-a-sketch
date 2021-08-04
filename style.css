@@ -1,14 +1,25 @@
-body {
-    font-family: "Georama", sans-serif;
-    font-weight: 400;
+body{
+    background: #F0F026;
+}
+
+.clean-button-hover:hover {
+    opacity: 1; 
+    height: 1px;
+}
+
+.clean-button-hover {
+    opacity: 0.85;
 }
 
 #clean-button {
+    font-family: "VT323";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
     background-color: #f8f9fa;
     border: 1px solid #767777;
     border-radius: 4px;
     color: #3c4043;
-    font-size: 14px;
     margin: 11px 4px;
     padding: 0 16px;
     line-height: 27px;
@@ -18,3 +29,36 @@ body {
     cursor: pointer;
     user-select: none;
 }
+
+  .slider {
+    appearance: none;
+    width: 50%;
+    height: 15px;
+    background: #f8f9fa;
+    border: 1px solid #767777;
+    outline: none;
+    opacity: 0.85;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    background: #3c4043; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
