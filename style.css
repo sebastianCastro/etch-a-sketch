@@ -78,6 +78,16 @@ body{
   width: 500px;
 }
 
+footer {
+  color: #3c4043;
+  background-color: white;
+}
+
+footer a {
+  color: #3c4043;
+  text-decoration: none;
+}
+
 @media (max-width: 750px) {
   #title-section{
     height: 10%;
@@ -103,4 +113,36 @@ body{
     visibility: hidden;
   }
 
+  footer {
+    color: white;
+    background-color: crimson;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media only screen 
+  and (min-device-width: 812px) 
+  and (max-device-height: 375px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    #title-section{
+      height: 10%;
+      width: 90%;
+      font-size: 40px;
+    }
+  
+    .frame {
+      height: 100%;
+      width: 100%;
+      border: hidden;
+      border-radius: 0%;
+    }
+  
+    .draw-container {
+      height: 60%;
+      width: 80%;
+    }
 }

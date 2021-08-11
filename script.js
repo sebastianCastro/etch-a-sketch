@@ -106,6 +106,12 @@ while (circle < 2) {
     circle ++;
 }
 
+let gitHubFooter = document.getElementById("git-hub-footer");
+gitHubFooter.style.position = "absolute";
+gitHubFooter.style.bottom = "0px";
+gitHubFooter.style.width = "100%";
+gitHubFooter.style.fontSize = "20px";
+
 function getUiSliderValue() {
     return slider.value;
 }
