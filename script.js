@@ -117,10 +117,10 @@ function createPixels() {
         pixelSquare.className = "pixel";
         pixelSquare.id = "pixel-"+i;
         pixelSquare.style.backgroundColor = "lightgray";
-        pixelSquare.addEventListener("mouseover", paintPixel, false);
-        pixelSquare.addEventListener("touchstart", paintPixel, false);
-        pixelSquare.addEventListener("touchmove", paintPixel, false);
-        pixelSquare.addEventListener("touchend", paintPixel, false);
+        pixelSquare.addEventListener("mouseover", paintPixel);
+        pixelSquare.addEventListener("touchstart", paintPixel);
+        pixelSquare.addEventListener("touchmove", paintPixel);
+        pixelSquare.addEventListener("touchend", paintPixel);
         i++;
     }
 }
