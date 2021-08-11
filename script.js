@@ -106,10 +106,13 @@ while (circle < 2) {
     circle ++;
 }
 
-let gitHubFooter = document.getElementById("git-hub-footer");
+let gitHubFooter = document.createElement("footer");
+body.append(gitHubFooter);
+gitHubFooter.id = "git-hub-footer";
 gitHubFooter.style.position = "absolute";
 gitHubFooter.style.bottom = "0px";
 gitHubFooter.style.width = "100%";
+gitHubFooter.innerHTML = "Made by: <a href='https://github.com/sebastianCastro'>sebastianCastro</a>";
 gitHubFooter.style.fontSize = "20px";
 
 function getUiSliderValue() {
