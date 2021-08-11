@@ -47,6 +47,16 @@ container.style.margin = "0px";
 container.style.display = "grid";
 container.style.justifyContent = "end";
 container.style.overflow = "hidden";
+// Next we make the container touch sensiteve for mobile devices.
+container.addEventListener("touchmove", function (e) {
+    e.preventDefault();
+    let myLocation = e.changedTouches[0];
+    let realTarget = document.elementFromPoint(
+      myLocation.clientX,
+      myLocation.clientY
+    );
+    if (realTarget.classList.contains("pixel")) (realTarget.style.backgroundColor = "black");
+  });
 
 let circlesSection = document.createElement("div");
 frame.append(circlesSection);
@@ -118,9 +128,6 @@ function createPixels() {
         pixelSquare.id = "pixel-"+i;
         pixelSquare.style.backgroundColor = "lightgray";
         pixelSquare.addEventListener("mouseover", paintPixel);
-        pixelSquare.addEventListener("touchstart", paintPixel);
-        pixelSquare.addEventListener("touchmove", paintPixel);
-        pixelSquare.addEventListener("touchend", paintPixel);
         i++;
     }
 }
@@ -134,7 +141,8 @@ function removePixels() {
 
 function paintPixel(e) {
     singlePixel = document.getElementById(e.target.id);
-    console.log(singlePixel);
+    console.log(e.x);
+    // console.log(singlePixel);
     singlePixel.style.background = "black";
 }
 
