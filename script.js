@@ -118,7 +118,9 @@ function createPixels() {
         pixelSquare.id = "pixel-"+i;
         pixelSquare.style.backgroundColor = "lightgray";
         pixelSquare.addEventListener("mouseover", paintPixel, false);
-        pixelSquare.addEventListener("touchmove", paintPixel, false) ;
+        pixelSquare.addEventListener("touchstart", paintPixel, false);
+        pixelSquare.addEventListener("touchmove", paintPixel, false);
+        pixelSquare.addEventListener("touchend", paintPixel, false);
         i++;
     }
 }
