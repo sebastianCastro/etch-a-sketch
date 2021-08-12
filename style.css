@@ -1,4 +1,5 @@
 body{
+  height: 100vh;
   background-image: url("./images/80s-img.png");
   background-size: 400px;
   background-repeat: round;
@@ -89,6 +90,10 @@ footer a {
 }
 
 @media (max-width: 750px) {
+  body {
+    height: 100svh;
+  }
+
   #title-section{
     height: 10%;
     width: 90%;
@@ -128,6 +133,10 @@ footer a {
   and (min-device-width: 812px) 
   and (max-device-height: 375px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+    body {
+      height: 100svh;
+    }  
+
     #title-section{
       height: 10%;
       width: 90%;
