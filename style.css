@@ -91,7 +91,7 @@ footer a {
 
 @media (max-width: 750px) {
   body {
-    height: 100svh;
+    height: 100lvh;
   }
 
   #title-section{
@@ -134,7 +134,7 @@ footer a {
   and (max-device-height: 375px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     body {
-      height: 100svh;
+      height: 100lvh;
     }  
 
     #title-section{
